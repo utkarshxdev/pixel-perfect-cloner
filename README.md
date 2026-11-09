@@ -4,14 +4,41 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Protocol: v1.0.0](https://img.shields.io/badge/Protocol-v1.0.0-orange.svg)](SKILL.md)
+[![Compatible: Antigravity & Claude Code](https://img.shields.io/badge/Agents-Antigravity%20%7C%20Claude%20Code%20%7C%20Cursor-success.svg)](SKILL.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/utkarshxdev/pixel-perfect-cloner/pulls)
+
+---
+
+## 🏆 Visual Proof: Original vs. White-Labeled Clone
+
+Standard web cloners copy inert HTML. `pixel-perfect-cloner` reverse-engineers the full architecture, synchronizes client hydration, and enables deep white-labeling without breaking layouts or WebGL shaders.
+
+| Original Reference (`sybiosme.com`) | White-Labeled Clone (`Sybio`) |
+| :---: | :---: |
+| ![Original Reference](assets/original_sybiosme.png) | ![Cloned Sybio](assets/cloned_sybio.png) |
+| *Original Awwwards-winning marketing site with halftone WebGL2 shader.* | *Clone re-branded to "SYBIO" with synchronized hydration, custom font loaders, and identical GPU halftone dynamics.* |
+
+---
+
+## 🚀 Advanced Capabilities: Beyond Static Scraping
+
+### 1. 3D WebGL Runway & Curved Card Physics
+Preserves full GPU acceleration, texture promises, and requestAnimationFrame loops without silent texture stalls (`opacity: 0`).
+
+![3D WebGL Card Runway](assets/cloned_work_3d.png)
+
+### 2. Dead Canvas $\rightarrow$ Interactive Showcase Lightbox
+Original sites often disable pointer events (`pointer-events: none`) on 3D canvases to prevent scroll hijacking. `pixel-perfect-cloner` applies **3D-to-2D perspective raycasting** to map mouse clicks, display hover badges (`View Project ↗`), and open full case study lightboxes:
+
+![Interactive Lightbox Modal](assets/cloned_interactive_modal.png)
 
 ---
 
 ## Why This Skill Exists
 
-Standard website cloners and generic AI prompts fail catastrophically on modern, Awwwards-grade websites:
-- **Missing Asset Formats**: Only fetching standard desktop WebP images causes WebGL texture loader promises to reject when `<picture>` requests `.avif` or `-m` mobile variants—leaving canvases stuck at `opacity: 0`.
-- **The Hydration Trap**: Static HTML edits get immediately overwritten by client-side hydration (SvelteKit, Next.js, Nuxt, React) because hardcoded strings reside inside compiled JS chunks.
+Standard website cloners and generic AI prompts fail catastrophically on modern, high-end websites:
+- **Missing Responsive Formats**: Only fetching desktop WebP images causes WebGL texture loaders to reject when `<picture>` requests `.avif` or `-m` mobile variants—leaving canvases stuck at `opacity: 0`.
+- **The Client Hydration Trap**: Static HTML edits get overwritten by client-side hydration (SvelteKit, Next.js, Nuxt, React) because hardcoded strings reside inside compiled JS chunks.
 - **Scrollytelling Collisions**: Sticky runway plates (`[data-plate][data-lead]`) stay stuck and visually overlap downstream content or pricing tables.
 - **Payment & API Crashes**: Cloned checkout panels crash with `"Invalid API Key provided"` because backend endpoints are missing or return dummy keys.
 - **Dead Interactive Elements**: Reference sites often set `pointer-events: none` on 3D canvases to avoid scroll hijacking, leaving visitors frustrated when clicking cards does nothing.
@@ -75,6 +102,7 @@ pixel-perfect-cloner/
 ├── SKILL.md                          # Master 7-Phase Execution Protocol
 ├── README.md                         # Documentation & Quickstart
 ├── LICENSE                           # MIT License
+├── assets/                           # High-res rendered comparison evidence
 ├── references/
 │   ├── webgl-and-shaders.md          # WebGL2, halftone shaders & canvas troubleshooting
 │   ├── hydration-and-frameworks.md   # Overcoming client-side hydration overwrites
@@ -83,6 +111,12 @@ pixel-perfect-cloner/
     ├── deep-asset-fetcher.py         # Responsive asset & picture variant downloader
     └── verify-clone.js               # Headless Chrome CDP inspector & screenshot QA
 ```
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=utkarshxdev/pixel-perfect-cloner&type=Date)](https://star-history.com/#utkarshxdev/pixel-perfect-cloner&Date)
 
 ---
 
